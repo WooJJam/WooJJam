@@ -1,5 +1,9 @@
 <div align=center><h1>📚My Stack📚</h1></div>
 <div align=center>
+ <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=black">
+  <img src="https://img.shields.io/badge/JAVA-FF160B?style=for-the-badge&logo=JAVA&logoColor=black">
+ <img src="https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=PYTHON&logoColor=black">
+ <br>
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=for-the-badge&logo=JAVASCRIPT&logoColor=white">
 <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=Node.js&logoColor=white">
 <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=EXPRESS&logoColor=white">
