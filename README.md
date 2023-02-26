@@ -10,6 +10,7 @@
 <img src="https://img.shields.io/badge/NODE.JS-339933?style=for-the-badge&logo=Node.js&logoColor=white">
 <img src="https://img.shields.io/badge/EXPRESS-000000?style=for-the-badge&logo=EXPRESS&logoColor=white">
 <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=TYPESCRIPT&logoColor=white">
+ <img src="https://img.shields.io/badge/DJANGO-092E20?style=for-the-badge&logo=DJANGO&logoColor=white">
  <br>
  
  <img src="https://img.shields.io/badge/MYSQL-4479A1?style=for-the-badge&logo=MYSQL&logoColor=black">
