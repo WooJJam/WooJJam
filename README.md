@@ -15,7 +15,6 @@
 <img src="https://img.shields.io/badge/NODE.JS-339933?style=square&logo=Node.js&logoColor=white">
 <img src="https://img.shields.io/badge/EXPRESS-000000?style=square&logo=EXPRESS&logoColor=white">
 <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=square&logo=TYPESCRIPT&logoColor=white">
- <img src="https://img.shields.io/badge/DJANGO-092E20?style=square&logo=DJANGO&logoColor=white">
  <br>
  
  <img src="https://img.shields.io/badge/MYSQL-4479A1?style=square&logo=MYSQL&logoColor=black">
