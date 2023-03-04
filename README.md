@@ -1,8 +1,8 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&reversal=true&text=WooJJam&fontSize=50&fontColor=ffffff&height=180)
+![header](https://capsule-render.vercel.app/api?type=waving&color=gradient&reversal=true&text=WooJJam&fontSize=40&fontColor=ffffff&height=180)
 
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooJJam%2Fhit-counter&count_bg=%23000000&title_bg=%2307F40E&icon=&icon_color=%236D1C1C&title=Views&edge_flat=true"/></a>
 
-<div align=center><h1>📚My Stack📚</h1></div>
+<div align=center><h2>📚Stack</h2></div>
 <div align=center>
  <img src="https://img.shields.io/badge/C-A8B9CC?style=square&logo=C&logoColor=black">
   <img src="https://img.shields.io/badge/JAVA-E34F26?style=square&logo=JAVA&logoColor=black">
