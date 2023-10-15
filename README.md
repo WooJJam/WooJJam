@@ -13,8 +13,9 @@
 <img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=square&logo=JAVASCRIPT&logoColor=white">
  <br>
 <img src="https://img.shields.io/badge/NODE.JS-339933?style=square&logo=Node.js&logoColor=white">
-<img src="https://img.shields.io/badge/EXPRESS-000000?style=square&logo=EXPRESS&logoColor=white">
 <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=square&logo=TYPESCRIPT&logoColor=white">
+<img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white">
+<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white">
  <br>
  
  <img src="https://img.shields.io/badge/MYSQL-4479A1?style=square&logo=MYSQL&logoColor=black">
