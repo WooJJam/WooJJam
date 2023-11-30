@@ -3,7 +3,7 @@
 
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooJJam%2Fhit-counter&count_bg=%23000000&title_bg=%2307F40E&icon=&icon_color=%236D1C1C&title=Views&edge_flat=true"/></a>
 
-[![bi-sz's GitHub stats](https://github-readme-stats.vercel.app/api?username=WooJJam&include_all_commits=true&show_icons=true&theme=cobalt)](https://github.com/WooJJam/github-readme-stats)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=jaemin5548)](https://solved.ac/jaemin5548/)
  
 ## 📞 Contact 📞
 <div style="display:flex; flex-direction:row;">
