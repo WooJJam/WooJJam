@@ -6,7 +6,7 @@
 
 ---
 ![WooJJam's GitHub stats](https://github-readme-stats.vercel.app/api?username=WooJJam&show_icons=true&theme=transparent)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=woojjam)](https://solved.ac/woojjam)]
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=woojjam)](https://solved.ac/woojjam)
 
 ------
 
