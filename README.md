@@ -29,9 +29,6 @@
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&logoColor=white"> 
 </a>
 
-
-----
-
 ### DEV log
 <a href="https://velog.io/@woojjam">
         <img src="https://img.shields.io/badge/Velog-20c997?style=fflat&logo=Vimeo&logoColor=white"> 
