@@ -1,25 +1,17 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Alkatra&weight=500&size=45&duration=3500&pause=3&color=6994CDEE&center=false&vCenter=false&multiline=true&repeat=true&width=1000&height=100&lines=Welcome+to+WooJJam+GitHub!👋)](https://git.io/typing-svg)
-
+### Hello, This is WooJJam's Github 👋 
 <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooJJam%2Fhit-counter&count_bg=%23000000&title_bg=%2307F40E&icon=&icon_color=%236D1C1C&title=Views&edge_flat=true"/></a>
 
-![snake gif](https://github.com/WooJJam/WooJJam/blob/output/github-contribution-grid-snake.svg)
+#### Tech Skill
+- **Server** : ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white) ![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white) <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-social&logo=springsecurity&logoColor=white"> ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=Redis&logoColor=white)
+- **DevOps** : ![Amazon AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=AWS&logoColor=white) ![Github Action](https://img.shields.io/badge/GitHubActions-2088FF?style=flat&logo=Actions&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white) <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-social&logo=NGINX&logoColor=white"> <img src="https://img.shields.io/badge/grafana-F46800?style=for-the-social&logo=GRAFANA&logoColor=white">
 
----
-![WooJJam's GitHub stats](https://github-readme-stats.vercel.app/api?username=WooJJam&show_icons=true&theme=transparent)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=woojjam)](https://solved.ac/woojjam)
 
-------
-
-### Tech Stack
-![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white)
-![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=Redis&logoColor=white)
-![Amazon AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=AWS&logoColor=white)
-![Github Action](https://img.shields.io/badge/GitHubActions-2088FF?style=flat&logo=Actions&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white)
-
-### Contact
+#### Activity
+- ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024. 06 -)
+- 🌴 CodeIt Spring Team Lead (2024. 06 - 2024.08) 
+- 🏆 HGU DreamLandThon 우수상 (2023. 08)
+  
+#### Contact
 
 <a href="mailto:dnwoals1011@gmail.com">
   <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat&logo=Gmail&logoColor=white"> 
@@ -29,14 +21,31 @@
   <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=Instagram&logoColor=white"> 
 </a>
 
-### DEV log
+#### DEV log
 <a href="https://velog.io/@woojjam">
         <img src="https://img.shields.io/badge/Velog-20c997?style=fflat&logo=Vimeo&logoColor=white"> 
-    </a>
+</a>
+
+<a href="https://woojjam.tistory.com/">
+        <img src="https://img.shields.io/badge/tistory-FF5500?style=fflat&logo=tistory&logoColor=white"> 
+</a>
+
+---
+
+
+![snake gif](https://github.com/WooJJam/WooJJam/blob/output/github-contribution-grid-snake.svg)
+
+---
+
+
+#### Algorithm
+[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=woojjam)](https://solved.ac/woojjam)
+
   
 
 <!-- 
-## 📚 Stack 📚
+### 📚 Stack 📚
+👣 2023
 <img src="https://img.shields.io/badge/C-A8B9CC?style=square&logo=C&logoColor=black">
   <img src="https://img.shields.io/badge/JAVA-E34F26?style=square&logo=JAVA&logoColor=black">
  <img src="https://img.shields.io/badge/PYTHON-3776AB?style=square&logo=PYTHON&logoColor=black">
