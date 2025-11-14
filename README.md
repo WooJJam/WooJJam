@@ -1,9 +1,6 @@
 ### Hello, This is WooJJam's Github 👋 
 
-
-<a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWooJJam%2Fhit-counter&count_bg=%23000000&title_bg=%2307F40E&icon=&icon_color=%236D1C1C&title=Views&edge_flat=true"/></a>
-
-[![Github](https://www.codenary.co.kr/widget/github/api?username=우쨈)](https://www.codenary.co.kr/user-profile/detail/우쨈?github_ride=true&utm_source=github)
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FWooJJam&label=Visitors&icon=github&color=%23cfe2ff&message=&style=flat&tz=Asia%2FSeoul)
 
 #### Tech Skill
 - **Server** : ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white) ![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white) <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-social&logo=springsecurity&logoColor=white"> ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=Redis&logoColor=white)
@@ -14,7 +11,7 @@
 - ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024. 06 - 2025.08)
 - 🌴 CodeIt Spring Team Lead (2024. 06 - 2024.08) 
 - 🏆 HGU DreamLandThon 우수상 (2023. 08)
-https://github.com/mozilla/bugbug/pull/5453
+
 #### OpenSource
 - mozilla/bugbug [(#5453](https://github.com/mozilla/bugbug/pull/5453))
 #### Contact
