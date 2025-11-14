@@ -11,10 +11,12 @@
 
 
 #### Activity
-- ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024. 06 -)
+- ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024. 06 - 2025.08)
 - 🌴 CodeIt Spring Team Lead (2024. 06 - 2024.08) 
 - 🏆 HGU DreamLandThon 우수상 (2023. 08)
-  
+https://github.com/mozilla/bugbug/pull/5453
+#### OpenSource
+- mozilla/bugbug [(#5453](https://github.com/mozilla/bugbug/pull/5453))
 #### Contact
 
 <a href="mailto:dnwoals1011@gmail.com">
