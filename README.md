@@ -13,7 +13,7 @@
 - 🏆 HGU DreamLandThon 우수상 (2023. 08)
 
 #### OpenSource
-- mozilla/bugbug [(#5453](https://github.com/mozilla/bugbug/pull/5453))
+- mozilla/bugbug ([#5453](https://github.com/mozilla/bugbug/pull/5453), [#5457](https://github.com/mozilla/bugbug/pull/5457))
 #### Contact
 
 <a href="mailto:dnwoals1011@gmail.com">
