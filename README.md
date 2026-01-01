@@ -9,9 +9,9 @@
 
 #### Activity
 - 🙌 YAPP 27기 Server (2025.11 - 진행중)
-- ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024. 06 - 2025.08)
-- 🌴 CodeIt Spring Team Lead (2024. 05 - 2024.08) 
-- 🏆 HGU DreamLandThon 우수상 (2023. 07)
+- ⚽️ 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024.06 - 2025.08)
+- 🌴 CodeIt Spring Team Lead (2024.05 - 2024.08) 
+- 🏆 HGU DreamLandThon 우수상 (2023.07)
 
 #### OpenSource
 - mozilla/bugbug ([#5453](https://github.com/mozilla/bugbug/pull/5453), [#5457](https://github.com/mozilla/bugbug/pull/5457))
