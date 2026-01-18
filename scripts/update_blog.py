@@ -131,13 +131,9 @@ def format_number(num):
 def generate_markdown(posts, total_views=None, daily_stats=None):
     """README용 마크다운 생성"""
     
-    markdown = ""  # 👈 이 줄 추가!
-    markdown += "## 📚 Latest Blog Posts\n\n"
+    markdown = "## 📚 Latest Blog Posts\n\n"
     
-    # HTML 테이블로 변경 (가로 꽉 차게)
-    markdown += '<table width="100%">\n'
-    
-    # 통계를 테이블 상단 행에 추가
+    # 통계 정보를 테이블 위에 오른쪽 정렬로 표시
     if total_views is not None or (daily_stats and daily_stats['today'] is not None):
         stats_parts = []
         if daily_stats and daily_stats['today'] is not None:
@@ -147,10 +143,12 @@ def generate_markdown(posts, total_views=None, daily_stats=None):
         if total_views is not None:
             stats_parts.append(f"Total: {format_number(total_views)}")
         
-        markdown += '  <tr>\n'
-        markdown += f'    <td colspan="2" align="right">{" | ".join(stats_parts)}</td>\n'
-        markdown += '  </tr>\n'
+        markdown += "<div align='right'>\n\n"
+        markdown += " | ".join(stats_parts) + "\n\n"
+        markdown += "</div>\n\n"
     
+    # HTML 테이블 (가로 꽉 차게)
+    markdown += '<table width="100%">\n'
     markdown += '  <thead>\n'
     markdown += '    <tr>\n'
     markdown += '      <th align="left">Title</th>\n'
