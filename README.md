@@ -20,10 +20,13 @@
 <!-- BLOG-POST-LIST:START -->
 ## 📚 Latest Blog Posts
 
+<div align='right'>
+
+Today: 7 | Yesterday: 9 | Total: 1,988
+
+</div>
+
 <table width="100%">
-  <tr>
-    <td colspan="2" align="right">Today: 7 | Yesterday: 9 | Total: 1,988</td>
-  </tr>
   <thead>
     <tr>
       <th align="left">Title</th>
