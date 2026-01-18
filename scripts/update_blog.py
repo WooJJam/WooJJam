@@ -1,8 +1,82 @@
 import feedparser
 import re
 from datetime import datetime
-from html import unescape
-import json
+import requests
+from bs4 import BeautifulSoup
+
+def get_total_blog_views(blog_url):
+    """티스토리 메인에서 전체 조회수 가져오기"""
+    try:
+        print(f"📊 전체 조회수 가져오는 중: {blog_url}")
+        
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+        }
+        response = requests.get(blog_url, headers=headers, timeout=10)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # counter li 찾기
+        counter = soup.find('li', id='counter')
+        if counter:
+            # total div 찾기
+            total_div = counter.find('div', class_='total')
+            if total_div:
+                # cnt div 찾기
+                cnt_div = total_div.find('div', class_='cnt')
+                if cnt_div:
+                    cnt_text = cnt_div.text.strip()
+                    # 쉼표 제거하고 숫자만 추출
+                    total = int(cnt_text.replace(',', ''))
+                    print(f"✅ 전체 조회수: {total:,}")
+                    return total
+        
+        print("⚠️  전체 조회수를 찾을 수 없습니다.")
+        return None
+    
+    except Exception as e:
+        print(f"❌ 전체 조회수 가져오기 실패: {e}")
+        return None
+
+def get_daily_stats(blog_url):
+    """티스토리 메인에서 오늘/어제 방문자 수 가져오기"""
+    try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36'
+        }
+        response = requests.get(blog_url, headers=headers, timeout=10)
+        response.raise_for_status()
+        
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        stats = {'today': None, 'yesterday': None}
+        
+        # counter li 찾기
+        counter = soup.find('li', id='counter')
+        if counter:
+            # 오늘
+            today_div = counter.find('div', class_='today')
+            if today_div:
+                cnt_div = today_div.find('div', class_='cnt')
+                if cnt_div:
+                    stats['today'] = int(cnt_div.text.strip().replace(',', ''))
+            
+            # 어제
+            yesterday_div = counter.find('div', class_='yesterday')
+            if yesterday_div:
+                cnt_div = yesterday_div.find('div', class_='cnt')
+                if cnt_div:
+                    stats['yesterday'] = int(cnt_div.text.strip().replace(',', ''))
+        
+        if stats['today'] is not None:
+            print(f"📅 오늘: {stats['today']:,} | 어제: {stats['yesterday']:,}")
+        
+        return stats
+    
+    except Exception as e:
+        print(f"❌ 일별 통계 가져오기 실패: {e}")
+        return {'today': None, 'yesterday': None}
 
 def fetch_tistory_posts(blog_url, max_posts=5):
     """티스토리 RSS 피드에서 최근 게시글 가져오기"""
@@ -17,24 +91,17 @@ def fetch_tistory_posts(blog_url, max_posts=5):
             return []
         
         posts = []
-        for entry in feed.entries[:max_posts]:
-            # HTML 태그 제거
-            summary = unescape(re.sub('<[^<]+?>', '', entry.get('summary', '')))
-            summary = summary.strip()[:100] + '...' if len(summary) > 100 else summary
-            
-            # 카테고리 추출
-            categories = [tag.term for tag in entry.get('tags', [])]
+        for i, entry in enumerate(feed.entries[:max_posts], 1):
+            print(f"📄 [{i}/{max_posts}] {entry.title}")
             
             post = {
                 'title': entry.title,
                 'link': entry.link,
                 'published': entry.get('published', ''),
-                'summary': summary,
-                'categories': categories
             }
             posts.append(post)
         
-        print(f"✅ {len(posts)}개의 게시글을 찾았습니다.")
+        print(f"\n✅ 총 {len(posts)}개의 게시글을 찾았습니다.\n")
         return posts
     
     except Exception as e:
@@ -42,105 +109,57 @@ def fetch_tistory_posts(blog_url, max_posts=5):
         return []
 
 def parse_date(date_str):
-    """날짜 파싱 및 포맷팅"""
+    """날짜 파싱"""
     formats = [
         '%a, %d %b %Y %H:%M:%S %z',
         '%a, %d %b %Y %H:%M:%S %Z',
-        '%Y-%m-%dT%H:%M:%S%z'
     ]
-    
     for fmt in formats:
         try:
             date = datetime.strptime(date_str, fmt)
             return date.strftime('%Y.%m.%d')
         except:
             continue
-    
     return date_str[:10] if date_str else ''
 
-def generate_list_style(posts):
-    """리스트 스타일 마크다운"""
-    markdown = "## 📝 Latest Blog Posts\n\n"
-    
-    for i, post in enumerate(posts, 1):
-        date_str = parse_date(post['published'])
-        categories = ' · '.join([f'`{cat}`' for cat in post['categories'][:3]]) if post['categories'] else ''
-        
-        markdown += f"### {i}. [{post['title']}]({post['link']})\n\n"
-        markdown += f"> {post['summary']}\n\n"
-        markdown += f"📅 {date_str}"
-        
-        if categories:
-            markdown += f" | 🏷️ {categories}"
-        
-        markdown += "\n\n---\n\n"
-    
-    return markdown
+def format_number(num):
+    """숫자 포맷팅"""
+    if num is None:
+        return '-'
+    if num >= 1000000:
+        return f"{num/1000000:.1f}M"
+    elif num >= 10000:
+        return f"{num//1000}K"
+    elif num >= 1000:
+        return f"{num:,}"
+    else:
+        return str(num)
 
-def generate_table_style(posts):
-    """테이블 스타일 마크다운"""
-    markdown = "## 📖 Latest Blog Posts\n\n"
-    markdown += "| 📌 | Title | Date | Tags |\n"
-    markdown += "|:--:|:------|:----:|:-----|\n"
+def generate_markdown(posts, total_views=None, daily_stats=None):
+    """README용 마크다운 생성"""
     
-    for i, post in enumerate(posts, 1):
-        date_str = parse_date(post['published'])
-        categories = ', '.join([f'`{cat}`' for cat in post['categories'][:2]]) if post['categories'] else '-'
-        title_link = f"[{post['title']}]({post['link']})"
-        
-        markdown += f"| {i} | {title_link} | {date_str} | {categories} |\n"
-    
-    markdown += "\n"
-    return markdown
-
-def generate_card_style(posts):
-    """카드 스타일 마크다운"""
     markdown = "## 📚 Latest Blog Posts\n\n"
     
-    for i, post in enumerate(posts):
-        date_str = parse_date(post['published'])
-        categories = ' · '.join(post['categories'][:3]) if post['categories'] else ''
+    # 통계 정보
+    if total_views is not None or (daily_stats and daily_stats['today'] is not None):
+        stats_parts = []
+        if total_views is not None:
+            stats_parts.append(f"Total Views: `{format_number(total_views)}`")
+        if daily_stats and daily_stats['today'] is not None:
+            stats_parts.append(f"Today: `{daily_stats['today']}`")
+        if daily_stats and daily_stats['yesterday'] is not None:
+            stats_parts.append(f"Yesterday: `{daily_stats['yesterday']}`")
         
-        # 배경색 번갈아가며
-        bg_emoji = "🔵" if i % 2 == 0 else "🟣"
-        
-        markdown += f"{bg_emoji} **[{post['title']}]({post['link']})**\n\n"
-        markdown += f"   {post['summary']}\n\n"
-        markdown += f"   📅 {date_str}"
-        
-        if categories:
-            markdown += f" | 🏷️ {categories}"
-        
-        markdown += "\n\n"
+        markdown += " • ".join(stats_parts) + "\n\n"
     
-    return markdown
-
-def generate_minimal_style(posts):
-    """미니멀 스타일 마크다운"""
-    markdown = "## ✍️ Recent Posts\n\n"
+    markdown += "| No | Title | Date |\n"
+    markdown += "|:--:|:------|:----:|\n"
     
-    for post in posts:
+    for i, post in enumerate(posts, 1):
         date_str = parse_date(post['published'])
-        markdown += f"- **[{post['title']}]({post['link']})** · `{date_str}`\n"
+        markdown += f"| {i} | [{post['title']}]({post['link']}) | `{date_str}` |\n"
     
     markdown += "\n"
-    return markdown
-
-def generate_badge_style(posts):
-    """뱃지 스타일 마크다운"""
-    markdown = "## 📝 Latest Blog Posts\n\n"
-    markdown += '<p align="center">\n\n'
-    
-    for post in posts:
-        date_str = parse_date(post['published'])
-        # 제목을 URL 인코딩 형식으로 변환
-        title_encoded = post['title'].replace(' ', '%20').replace('-', '--')
-        
-        markdown += f'[![Blog Post]'
-        markdown += f'(https://img.shields.io/badge/{title_encoded[:40]}-20C997?style=for-the-badge&logo=Tistory&logoColor=white)]'
-        markdown += f'({post["link"]})\n\n'
-    
-    markdown += '</p>\n\n'
     return markdown
 
 def update_readme(markdown_content, readme_path='README.md'):
@@ -162,12 +181,10 @@ def update_readme(markdown_content, readme_path='README.md'):
         print(f"다음 마커를 추가해주세요:\n{start_marker}\n{end_marker}")
         return False
     
-    # 정규표현식으로 마커 사이 내용 교체
     pattern = f"{re.escape(start_marker)}.*?{re.escape(end_marker)}"
     new_content = f"{start_marker}\n{markdown_content}{end_marker}"
     updated_readme = re.sub(pattern, new_content, readme, flags=re.DOTALL)
     
-    # 파일 저장
     with open(readme_path, 'w', encoding='utf-8') as f:
         f.write(updated_readme)
     
@@ -176,56 +193,61 @@ def update_readme(markdown_content, readme_path='README.md'):
 
 def main():
     # ========== 설정 ==========
-    BLOG_URL = "https://woojjam.tistory.com"  # 티스토리 블로그 URL
-    MAX_POSTS = 5  # 표시할 게시글 수
-    STYLE = 'badge'  # 스타일: list, table, card, minimal, badge
+    BLOG_URL = "https://woojjam.tistory.com"
+    MAX_POSTS = 5
+    SHOW_DAILY_STATS = True  # 오늘/어제 통계 표시
     # =========================
     
-    print("=" * 60)
+    print("=" * 70)
     print("🚀 티스토리 블로그 게시글 자동 업데이트")
-    print("=" * 60)
+    print("=" * 70)
     print(f"📍 블로그: {BLOG_URL}")
-    print(f"📊 스타일: {STYLE}")
     print(f"📝 게시글 수: {MAX_POSTS}")
-    print("=" * 60)
+    print(f"📊 일별 통계: {'포함' if SHOW_DAILY_STATS else '미포함'}")
+    print("=" * 70)
+    print()
+    
+    # 전체 조회수 가져오기
+    total_views = get_total_blog_views(BLOG_URL)
+    
+    # 오늘/어제 통계 가져오기
+    daily_stats = None
+    if SHOW_DAILY_STATS:
+        daily_stats = get_daily_stats(BLOG_URL)
+    
+    print()
     
     # 게시글 가져오기
     posts = fetch_tistory_posts(BLOG_URL, MAX_POSTS)
     
     if not posts:
         print("\n❌ 게시글을 가져올 수 없습니다.")
-        print("블로그 URL과 RSS 피드 설정을 확인해주세요.")
+        print("   - 블로그 URL이 올바른지 확인해주세요")
+        print("   - RSS 피드가 활성화되어 있는지 확인해주세요")
         return False
     
-    # 게시글 목록 출력
-    print("\n📋 가져온 게시글:")
-    for i, post in enumerate(posts, 1):
-        print(f"  {i}. {post['title']}")
-    
-    # 스타일에 따른 마크다운 생성
-    print(f"\n🎨 '{STYLE}' 스타일로 마크다운 생성 중...")
-    
-    if STYLE == 'table':
-        markdown = generate_table_style(posts)
-    elif STYLE == 'card':
-        markdown = generate_card_style(posts)
-    elif STYLE == 'minimal':
-        markdown = generate_minimal_style(posts)
-    elif STYLE == 'badge':
-        markdown = generate_badge_style(posts)
-    else:  # list (기본)
-        markdown = generate_list_style(posts)
+    # 마크다운 생성
+    print("🎨 마크다운 생성 중...")
+    markdown = generate_markdown(posts, total_views, daily_stats)
     
     # README 업데이트
-    print("\n📝 README.md 업데이트 중...")
+    print("📝 README.md 업데이트 중...")
     success = update_readme(markdown)
     
-    print("\n" + "=" * 60)
+    print("\n" + "=" * 70)
     if success:
         print("✨ 성공적으로 완료되었습니다!")
+        print("=" * 70)
+        print("\n📊 블로그 통계:")
+        if total_views:
+            print(f"   - 전체 조회수: {total_views:,}")
+        if daily_stats and daily_stats['today'] is not None:
+            print(f"   - 오늘: {daily_stats['today']:,}")
+            print(f"   - 어제: {daily_stats['yesterday']:,}")
+        print(f"   - 최근 게시글: {len(posts)}개")
     else:
         print("❌ 업데이트에 실패했습니다.")
-    print("=" * 60)
+        print("=" * 70)
     
     return success
 
