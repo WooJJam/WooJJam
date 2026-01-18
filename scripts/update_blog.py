@@ -168,6 +168,36 @@ def generate_markdown(posts, total_views=None, daily_stats=None):
     markdown += '</table>\n\n'
     
     return markdown
+
+def update_readme(markdown_content, readme_path='README.md'):
+    """README 파일 업데이트"""
+    try:
+        with open(readme_path, 'r', encoding='utf-8') as f:
+            readme = f.read()
+        
+        print(f"📄 README.md 파일을 읽었습니다.")
+    except FileNotFoundError:
+        print("❌ README.md 파일을 찾을 수 없습니다.")
+        return False
+    
+    start_marker = "<!-- BLOG-POST-LIST:START -->"
+    end_marker = "<!-- BLOG-POST-LIST:END -->"
+    
+    if start_marker not in readme or end_marker not in readme:
+        print(f"❌ README.md에 마커가 없습니다.")
+        print(f"다음 마커를 추가해주세요:\n{start_marker}\n{end_marker}")
+        return False
+    
+    pattern = f"{re.escape(start_marker)}.*?{re.escape(end_marker)}"
+    new_content = f"{start_marker}\n{markdown_content}{end_marker}"
+    updated_readme = re.sub(pattern, new_content, readme, flags=re.DOTALL)
+    
+    with open(readme_path, 'w', encoding='utf-8') as f:
+        f.write(updated_readme)
+    
+    print("✅ README.md 업데이트 완료!")
+    return True
+
 def main():
     # ========== 설정 ==========
     BLOG_URL = "https://woojjam.tistory.com"
