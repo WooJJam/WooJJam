@@ -178,7 +178,7 @@ def main():
     # ========== 설정 ==========
     BLOG_URL = "https://woojjam.tistory.com"  # 티스토리 블로그 URL
     MAX_POSTS = 5  # 표시할 게시글 수
-    STYLE = 'table'  # 스타일: list, table, card, minimal, badge
+    STYLE = 'card'  # 스타일: list, table, card, minimal, badge
     # =========================
     
     print("=" * 60)
