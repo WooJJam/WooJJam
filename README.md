@@ -18,15 +18,48 @@
 
 ## Latest Posts
 <!-- BLOG-POST-LIST:START -->
-## 📖 Latest Blog Posts
+## 📚 Latest Blog Posts
 
-| 📌 | Title | Date | Tags |
-|:--:|:------|:----:|:-----|
-| 1 | [나의 macOS를 GitHub Actions Runner로 만들기](https://woojjam.tistory.com/16) | 2026.01.17 | `DevOps/Github Actions`, `GitHub Actions` |
-| 2 | [라벨 하나로 PR 자동 완성하기](https://woojjam.tistory.com/15) | 2026.01.15 | `DevOps/Github Actions`, `Automation` |
-| 3 | [Java의 final은 불변성을 보장하지 않는다.](https://woojjam.tistory.com/14) | 2025.11.06 | `Backend/Java`, `Final` |
-| 4 | [자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃](https://woojjam.tistory.com/13) | 2025.08.01 | `Backend/Spring Boot`, `CompletableFuture` |
-| 5 | [자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기](https://woojjam.tistory.com/12) | 2025.07.11 | `Backend/Spring Boot`, `CompletableFuture` |
+🔵 **[나의 macOS를 GitHub Actions Runner로 만들기](https://woojjam.tistory.com/16)**
+
+   1. Introduce
+Private 레포에서 GitHub Actions를 사용하다 보면, 실행 시간이 무한하지 않다는 사실을 자연스럽게 체감하게 된다. 초기에는 단순한 빌드와 테...
+
+   📅 2026.01.17 | 🏷️ DevOps/Github Actions · GitHub Actions · GitHub hosted runner
+
+🟣 **[라벨 하나로 PR 자동 완성하기](https://woojjam.tistory.com/15)**
+
+   1. Introduce
+ 
+새로운 기능을 개발할 때마다 반복되는 작업 중 하나가 바로 PR 본문 작성이다. PR 본문은 단순한 형식 문서가 아니라, 리뷰어가 변경 의도를 이해하고 ...
+
+   📅 2026.01.15 | 🏷️ DevOps/Github Actions · Automation · code review
+
+🔵 **[Java의 final은 불변성을 보장하지 않는다.](https://woojjam.tistory.com/14)**
+
+   Java의 final은 무엇인가?
+`final`은 '최종적' 이라는 의미를 가지는데, 자바에서 이는 초기값이 한번 정해지면 프로그램 실행 도중에 수정할 수 없음을 의미한다. 또한 ...
+
+   📅 2025.11.06 | 🏷️ Backend/Java · Final · java
+
+🟣 **[자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃](https://woojjam.tistory.com/13)**
+
+   Introduce
+
+ 
+
+자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기
+Introduce 스프링에서 비동기 처리를 위해 흔히 `@Async` 를 ...
+
+   📅 2025.08.01 | 🏷️ Backend/Spring Boot · CompletableFuture · 비동기
+
+🔵 **[자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기](https://woojjam.tistory.com/12)**
+
+   Introduce 
+스프링에서 비동기 처리를 위해 흔히 `@Async` 를 사용하곤 한다.
+나 역시 프로젝트에서 `@Async` 를 적용하여 일부 후속 로직들을 메인 로직과 분리하...
+
+   📅 2025.07.11 | 🏷️ Backend/Spring Boot · CompletableFuture · 비동기
 
 <!-- BLOG-POST-LIST:END -->
 
