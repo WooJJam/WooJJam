@@ -131,7 +131,8 @@ def format_number(num):
 def generate_markdown(posts, total_views=None, daily_stats=None):
     """README용 마크다운 생성"""
     
-    # markdown = "## Latest Blog Posts\n\n"
+    markdown = ""  # 👈 이 줄 추가!
+    markdown += "## 📚 Latest Blog Posts\n\n"
     
     # HTML 테이블로 변경 (가로 꽉 차게)
     markdown += '<table width="100%">\n'
