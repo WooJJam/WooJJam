@@ -18,8 +18,6 @@
 
 ## Latest Posts
 <!-- BLOG-POST-LIST:START -->
-## 📚 Latest Blog Posts
-
 <div align='right'>
 
 Today: 7 | Yesterday: 9 | Total: 1,988
