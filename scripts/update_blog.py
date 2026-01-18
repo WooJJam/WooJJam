@@ -131,7 +131,7 @@ def format_number(num):
 def generate_markdown(posts, total_views=None, daily_stats=None):
     """README용 마크다운 생성"""
     
-    markdown = "## 📚 Latest Blog Posts\n\n"
+    markdown = "## Latest Blog Posts\n\n"
     
     # 통계 정보를 오른쪽 정렬로 표시
     if total_views is not None or (daily_stats and daily_stats['today'] is not None):
@@ -147,45 +147,27 @@ def generate_markdown(posts, total_views=None, daily_stats=None):
         markdown += " | ".join(stats_parts) + "\n\n"
         markdown += "</div>\n\n"
     
-    markdown += "| Title | Date |\n"
-    markdown += "|:------|:----:|\n"
+    # HTML 테이블로 변경 (가로 꽉 차게)
+    markdown += '<table width="100%">\n'
+    markdown += '  <thead>\n'
+    markdown += '    <tr>\n'
+    markdown += '      <th align="left">Title</th>\n'
+    markdown += '      <th align="center" width="120">Date</th>\n'
+    markdown += '    </tr>\n'
+    markdown += '  </thead>\n'
+    markdown += '  <tbody>\n'
     
     for post in posts:
         date_str = parse_date(post['published'])
-        markdown += f"| [{post['title']}]({post['link']}) | `{date_str}` |\n"
+        markdown += '    <tr>\n'
+        markdown += f'      <td><a href="{post["link"]}">{post["title"]}</a></td>\n'
+        markdown += f'      <td align="center"><code>{date_str}</code></td>\n'
+        markdown += '    </tr>\n'
     
-    markdown += "\n"
+    markdown += '  </tbody>\n'
+    markdown += '</table>\n\n'
+    
     return markdown
-
-def update_readme(markdown_content, readme_path='README.md'):
-    """README 파일 업데이트"""
-    try:
-        with open(readme_path, 'r', encoding='utf-8') as f:
-            readme = f.read()
-        
-        print(f"📄 README.md 파일을 읽었습니다.")
-    except FileNotFoundError:
-        print("❌ README.md 파일을 찾을 수 없습니다.")
-        return False
-    
-    start_marker = "<!-- BLOG-POST-LIST:START -->"
-    end_marker = "<!-- BLOG-POST-LIST:END -->"
-    
-    if start_marker not in readme or end_marker not in readme:
-        print(f"❌ README.md에 마커가 없습니다.")
-        print(f"다음 마커를 추가해주세요:\n{start_marker}\n{end_marker}")
-        return False
-    
-    pattern = f"{re.escape(start_marker)}.*?{re.escape(end_marker)}"
-    new_content = f"{start_marker}\n{markdown_content}{end_marker}"
-    updated_readme = re.sub(pattern, new_content, readme, flags=re.DOTALL)
-    
-    with open(readme_path, 'w', encoding='utf-8') as f:
-        f.write(updated_readme)
-    
-    print("✅ README.md 업데이트 완료!")
-    return True
-
 def main():
     # ========== 설정 ==========
     BLOG_URL = "https://woojjam.tistory.com"
