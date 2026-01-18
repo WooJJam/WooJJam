@@ -16,6 +16,10 @@
 - CodeIt Spring Team Lead (2024.05 - 2024.08) 
 - HGU DreamLandThon 우수상 (2023.07)
 
+## Latest Posts
+<!-- BLOG-POST-LIST:START -->
+<!-- BLOG-POST-LIST:END -->
+
 #### OpenSource
 - mozilla/bugbug ([#5453](https://github.com/mozilla/bugbug/pull/5453), [#5457](https://github.com/mozilla/bugbug/pull/5457))
 
