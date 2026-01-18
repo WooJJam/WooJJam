@@ -1,0 +1,58 @@
+name: Update Tistory Blog Posts
+
+on:
+  # 스케줄 실행 (매일 오전 9시, 오후 6시)
+  schedule:
+    - cron: '0 0 * * *'    # 매일 자정 (UTC 기준)
+    - cron: '0 9 * * *'    # 매일 오전 9시 (UTC 기준)
+  
+  # 수동 실행 가능
+  workflow_dispatch:
+
+jobs:
+  update-blog-posts:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser
+      
+      - name: 🔄 Update blog posts
+        run: |
+          python update_blog.py
+        env:
+          TZ: 'Asia/Seoul'
+      
+      - name: ✅ Check for changes
+        id: verify-diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+      
+      - name: 💾 Commit and push if changed
+        if: steps.verify-diff.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "🔄 Update blog posts - $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+      
+      - name: 📊 Summary
+        run: |
+          echo "### 🎉 Blog Update Complete!" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time:** $(date +'%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status:** Success ✅" >> $GITHUB_STEP_SUMMARY
