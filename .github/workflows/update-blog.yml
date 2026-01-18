@@ -13,6 +13,9 @@ on:
       - 'scripts/requirements.txt'
       - '.github/workflows/update-blog.yml'
 
+permissions:
+  contents: write  # 👈 이 부분 추가!
+
 jobs:
   update-blog-posts:
     runs-on: ubuntu-latest
