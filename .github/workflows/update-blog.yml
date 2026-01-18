@@ -1,13 +1,17 @@
 name: Update Tistory Blog Posts
 
 on:
-  # 스케줄 실행 (매일 오전 9시, 오후 6시)
   schedule:
-    - cron: '0 0 * * *'    # 매일 자정 (UTC 기준)
-    - cron: '0 9 * * *'    # 매일 오전 9시 (UTC 기준)
-  
-  # 수동 실행 가능
+    - cron: '0 0 * * *'
+    - cron: '0 9 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/update_blog.py'
+      - 'scripts/requirements.txt'
+      - '.github/workflows/update-blog.yml'
 
 jobs:
   update-blog-posts:
@@ -23,16 +27,15 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-          cache: 'pip'
       
       - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser
+          pip install -r scripts/requirements.txt
       
       - name: 🔄 Update blog posts
         run: |
-          python update_blog.py
+          python scripts/update_blog.py
         env:
           TZ: 'Asia/Seoul'
       
