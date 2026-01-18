@@ -131,7 +131,7 @@ def format_number(num):
 def generate_markdown(posts, total_views=None, daily_stats=None):
     """README용 마크다운 생성"""
     
-    markdown = "## 📚 Latest Blog Posts\n\n"
+    # markdown = "## 📚 Latest Blog Posts\n\n"
     
     # 통계 정보를 테이블 위에 오른쪽 정렬로 표시
     if total_views is not None or (daily_stats and daily_stats['today'] is not None):
