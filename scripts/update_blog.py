@@ -17,17 +17,13 @@ def get_total_blog_views(blog_url):
         
         soup = BeautifulSoup(response.text, 'html.parser')
         
-        # counter li 찾기
         counter = soup.find('li', id='counter')
         if counter:
-            # total div 찾기
             total_div = counter.find('div', class_='total')
             if total_div:
-                # cnt div 찾기
                 cnt_div = total_div.find('div', class_='cnt')
                 if cnt_div:
                     cnt_text = cnt_div.text.strip()
-                    # 쉼표 제거하고 숫자만 추출
                     total = int(cnt_text.replace(',', ''))
                     print(f"✅ 전체 조회수: {total:,}")
                     return total
@@ -52,17 +48,14 @@ def get_daily_stats(blog_url):
         
         stats = {'today': None, 'yesterday': None}
         
-        # counter li 찾기
         counter = soup.find('li', id='counter')
         if counter:
-            # 오늘
             today_div = counter.find('div', class_='today')
             if today_div:
                 cnt_div = today_div.find('div', class_='cnt')
                 if cnt_div:
                     stats['today'] = int(cnt_div.text.strip().replace(',', ''))
             
-            # 어제
             yesterday_div = counter.find('div', class_='yesterday')
             if yesterday_div:
                 cnt_div = yesterday_div.find('div', class_='cnt')
@@ -140,24 +133,26 @@ def generate_markdown(posts, total_views=None, daily_stats=None):
     
     markdown = "## 📚 Latest Blog Posts\n\n"
     
-    # 통계 정보
+    # 통계 정보를 오른쪽 정렬로 표시
     if total_views is not None or (daily_stats and daily_stats['today'] is not None):
         stats_parts = []
-        if total_views is not None:
-            stats_parts.append(f"Total Views: `{format_number(total_views)}`")
         if daily_stats and daily_stats['today'] is not None:
-            stats_parts.append(f"Today: `{daily_stats['today']}`")
+            stats_parts.append(f"Today: {daily_stats['today']}")
         if daily_stats and daily_stats['yesterday'] is not None:
-            stats_parts.append(f"Yesterday: `{daily_stats['yesterday']}`")
+            stats_parts.append(f"Yesterday: {daily_stats['yesterday']}")
+        if total_views is not None:
+            stats_parts.append(f"Total: {format_number(total_views)}")
         
-        markdown += " • ".join(stats_parts) + "\n\n"
+        markdown += "<div align='right'>\n\n"
+        markdown += " | ".join(stats_parts) + "\n\n"
+        markdown += "</div>\n\n"
     
-    markdown += "| No | Title | Date |\n"
-    markdown += "|:--:|:------|:----:|\n"
+    markdown += "| Title | Date |\n"
+    markdown += "|:------|:----:|\n"
     
-    for i, post in enumerate(posts, 1):
+    for post in posts:
         date_str = parse_date(post['published'])
-        markdown += f"| {i} | [{post['title']}]({post['link']}) | `{date_str}` |\n"
+        markdown += f"| [{post['title']}]({post['link']}) | `{date_str}` |\n"
     
     markdown += "\n"
     return markdown
