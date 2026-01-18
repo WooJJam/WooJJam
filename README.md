@@ -18,21 +18,44 @@
 
 ## Latest Posts
 <!-- BLOG-POST-LIST:START -->
-## 📚 Latest Blog Posts
+## Latest Blog Posts
 
 <div align='right'>
 
-Today: 4 | Yesterday: 9 | Total: 1,985
+Today: 7 | Yesterday: 9 | Total: 1,988
 
 </div>
 
-| Title | Date |
-|:------|:----:|
-| [나의 macOS를 GitHub Actions Runner로 만들기](https://woojjam.tistory.com/16) | `2026.01.17` |
-| [라벨 하나로 PR 자동 완성하기](https://woojjam.tistory.com/15) | `2026.01.15` |
-| [Java의 final은 불변성을 보장하지 않는다.](https://woojjam.tistory.com/14) | `2025.11.06` |
-| [자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃](https://woojjam.tistory.com/13) | `2025.08.01` |
-| [자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기](https://woojjam.tistory.com/12) | `2025.07.11` |
+<table width="100%">
+  <thead>
+    <tr>
+      <th align="left">Title</th>
+      <th align="center" width="120">Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/16">나의 macOS를 GitHub Actions Runner로 만들기</a></td>
+      <td align="center"><code>2026.01.17</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/15">라벨 하나로 PR 자동 완성하기</a></td>
+      <td align="center"><code>2026.01.15</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/14">Java의 final은 불변성을 보장하지 않는다.</a></td>
+      <td align="center"><code>2025.11.06</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/13">자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃</a></td>
+      <td align="center"><code>2025.08.01</code></td>
+    </tr>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/12">자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기</a></td>
+      <td align="center"><code>2025.07.11</code></td>
+    </tr>
+  </tbody>
+</table>
 
 <!-- BLOG-POST-LIST:END -->
 
