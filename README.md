@@ -8,7 +8,7 @@
 
 #### Latest Posts
 <!-- BLOG-POST-LIST:START -->
-<div align='right'>
+<div align='left'>
 
 Today: 7 | Yesterday: 9 | Total: 1,988
 
