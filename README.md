@@ -18,21 +18,17 @@
 
 ## Latest Posts
 <!-- BLOG-POST-LIST:START -->
-## 📝 Latest Blog Posts
+## 📚 Latest Blog Posts
 
-<p align="center">
+Total Views: `1,985` • Today: `4` • Yesterday: `9`
 
-[![Blog Post](https://img.shields.io/badge/나의%20macOS를%20GitHub%20Actions%20Runner로-20C997?style=for-the-badge&logo=Tistory&logoColor=white)](https://woojjam.tistory.com/16)
-
-[![Blog Post](https://img.shields.io/badge/라벨%20하나로%20PR%20자동%20완성하기-20C997?style=for-the-badge&logo=Tistory&logoColor=white)](https://woojjam.tistory.com/15)
-
-[![Blog Post](https://img.shields.io/badge/Java의%20final은%20불변성을%20보장하지%20않는다.-20C997?style=for-the-badge&logo=Tistory&logoColor=white)](https://woojjam.tistory.com/14)
-
-[![Blog Post](https://img.shields.io/badge/자바와%20스프링의%20비동기%20처리%20--%202편:%20Compl-20C997?style=for-the-badge&logo=Tistory&logoColor=white)](https://woojjam.tistory.com/13)
-
-[![Blog Post](https://img.shields.io/badge/자바와%20스프링의%20비동기%20처리%20--%201편:%20Compl-20C997?style=for-the-badge&logo=Tistory&logoColor=white)](https://woojjam.tistory.com/12)
-
-</p>
+| No | Title | Date |
+|:--:|:------|:----:|
+| 1 | [나의 macOS를 GitHub Actions Runner로 만들기](https://woojjam.tistory.com/16) | `2026.01.17` |
+| 2 | [라벨 하나로 PR 자동 완성하기](https://woojjam.tistory.com/15) | `2026.01.15` |
+| 3 | [Java의 final은 불변성을 보장하지 않는다.](https://woojjam.tistory.com/14) | `2025.11.06` |
+| 4 | [자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃](https://woojjam.tistory.com/13) | `2025.08.01` |
+| 5 | [자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기](https://woojjam.tistory.com/12) | `2025.07.11` |
 
 <!-- BLOG-POST-LIST:END -->
 
