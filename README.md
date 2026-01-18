@@ -1,22 +1,12 @@
 ### WooJJam | Jaemin Woo
 
-![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FWooJJam&label=Visitors&icon=github&color=%23cfe2ff&message=&style=flat&tz=Asia%2FSeoul)
+![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FWooJJam&label=Visitors&icon=github&color=%23cfe2ff&message=&style=flat&tz=Asia%2FSeoul) <a href="https://solved.ac/WooJJam"> <img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=WooJJam"> </a>
 
-![WooJJam's solved.ac stats](https://github-readme-solvedac.hyp3rflow.vercel.app/api/?handle=woojjam)
-
-#### Tech Skill
 ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white) ![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white) <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=for-the-social&logo=springsecurity&logoColor=white"> ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white)
 ![Amazon AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=AWS&logoColor=white) 
 <!-- ![Github Action](https://img.shields.io/badge/GitHubActions-2088FF?style=flat&logo=Actions&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white) <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-social&logo=NGINX&logoColor=white"> -->
 
-
-#### Activity
-- YAPP 27기 Server (2025.11 - 진행중)
-- 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024.06 - 2025.08)
-- CodeIt Spring Team Lead (2024.05 - 2024.08) 
-- HGU DreamLandThon 우수상 (2023.07)
-
-## Latest Posts
+#### Latest Posts
 <!-- BLOG-POST-LIST:START -->
 <div align='right'>
 
@@ -57,6 +47,12 @@ Today: 7 | Yesterday: 9 | Total: 1,988
 
 <!-- BLOG-POST-LIST:END -->
 
+#### Activity
+- YAPP 27기 Server (2025.11 - 진행중)
+- 소셜 풋살 매치 & 예약 플랫폼 스폰지 개발 및 운영 (2024.06 - 2025.08)
+- CodeIt Spring Team Lead (2024.05 - 2024.08) 
+- HGU DreamLandThon 우수상 (2023.07)
+
 #### OpenSource
 - mozilla/bugbug ([#5453](https://github.com/mozilla/bugbug/pull/5453), [#5457](https://github.com/mozilla/bugbug/pull/5457))
 
@@ -66,59 +62,3 @@ Today: 7 | Yesterday: 9 | Total: 1,988
 ![snake gif](https://github.com/WooJJam/WooJJam/blob/output/github-contribution-grid-snake.svg)
 
 ---
-
-
-<!-- 
-### 📚 Stack 📚
-👣 2023
-<img src="https://img.shields.io/badge/C-A8B9CC?style=square&logo=C&logoColor=black">
-  <img src="https://img.shields.io/badge/JAVA-E34F26?style=square&logo=JAVA&logoColor=black">
- <img src="https://img.shields.io/badge/PYTHON-3776AB?style=square&logo=PYTHON&logoColor=black">
- <br>
-  <p><strong>Frontend</strong></p>
- <img src="https://img.shields.io/badge/HTML5-3776AB?style=square&logo=HTML5&logoColor=white">
- <img src="https://img.shields.io/badge/CSS3-1527B6?style=square&logo=CSS3&logoColor=white">
-<img src="https://img.shields.io/badge/JAVASCRIPT-F7DF1E?style=square&logo=JAVASCRIPT&logoColor=white">
- <br>
-  <p><strong>Backend</strong></p>
- <img src="https://img.shields.io/badge/JAVA-007396?style=square&logo=JAVA&logoColor=black">
- <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=square&logo=TYPESCRIPT&logoColor=white">
-<img src="https://img.shields.io/badge/NODE.JS-339933?style=square&logo=Node.js&logoColor=white">
-  <img src="https://img.shields.io/badge/python-3776AB?style=sqyare&logo=python&logoColor=white"> 
- <br>
-  <p><strong>Framework</strong></p>
- <img src="https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white">
-<img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=flat-square&logo=spring-boot&logoColor=white">
- <img src="https://img.shields.io/badge/express-000000?style=square&logo=express&logoColor=white">
- <img src="https://img.shields.io/badge/Spring Security-6DB33F?style=square&logo=spring security&logoColor=white">
-  <img src="https://img.shields.io/badge/django-092E20?style=square&logo=django&logoColor=white">
-  <img src="https://img.shields.io/badge/flask-000000?style=square&logo=flask&logoColor=white">
- <p><strong>Database</strong></p>
- <img src="https://img.shields.io/badge/MYSQL-4479A1?style=square&logo=MYSQL&logoColor=black">
- <img src="https://img.shields.io/badge/MONGODB-47A248?style=square&logo=MONGODB&logoColor=black">
-    <p><strong>Server</strong></p>
-    <div>
-        <img src="https://img.shields.io/badge/linux-FCC624?style=square&logo=linux&logoColor=black"> 
-        <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=square&logo=apachetomcat&logoColor=black">
-        <img src="https://img.shields.io/badge/Amazon AWS-232F3E?style=square&logo=amazon aws&logoColor=white"> 
-    </div>
-  <p><strong>Devtool</strong></p>
- <img src="https://img.shields.io/badge/GIT-F05032?style=square=GIT&logoColor=black">
- <br>
- 
- <div align = center> 
- 
- </div>
-**WooJJam/WooJJam** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
---> 
