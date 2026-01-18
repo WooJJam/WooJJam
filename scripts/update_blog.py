@@ -144,7 +144,7 @@ def generate_markdown(posts, total_views=None, daily_stats=None):
         if total_views is not None:
             stats_parts.append(f"Total: {format_number(total_views)}")
         
-        markdown += "<div align='right'>\n\n"
+        markdown += "<div align='left'>\n\n"
         markdown += " | ".join(stats_parts) + "\n\n"
         markdown += "</div>\n\n"
     
