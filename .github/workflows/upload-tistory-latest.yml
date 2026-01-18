@@ -1,0 +1,15 @@
+name: Update README with latest Tistory posts
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 매일 00:00 UTC (KST 09:00)
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        with:
+          feed_list: "https://woojjam.tistory.com/rss"
+          max_post_count: 5
