@@ -14,7 +14,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 14 | Yesterday: 9 | Total: 1,995
+Today: 2 | Yesterday: 14 | Total: 1,997
 
 </div>
 
