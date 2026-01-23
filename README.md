@@ -14,7 +14,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 1 | Yesterday: 16 | Total: 2,029
+Today: 5 | Yesterday: 16 | Total: 2,033
 
 </div>
 
@@ -31,7 +31,7 @@ Today: 1 | Yesterday: 16 | Total: 2,029
       <td align="center"><code>2026.01.17</code></td>
     </tr>
     <tr>
-      <td><a href="https://woojjam.tistory.com/15">라벨 하나로 PR 자동 완성하기</a></td>
+      <td><a href="https://woojjam.tistory.com/15">PR 본문 자동화를 위한 AI 워크플로우 설계</a></td>
       <td align="center"><code>2026.01.15</code></td>
     </tr>
     <tr>
