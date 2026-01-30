@@ -14,7 +14,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 5 | Yesterday: 10 | Total: 2,115
+Today: 1 | Yesterday: 7 | Total: 2,118
 
 </div>
 
@@ -26,6 +26,10 @@ Today: 5 | Yesterday: 10 | Total: 2,115
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/17">RestClient는 어떻게 생성이 될까?</a></td>
+      <td align="center"><code>2026.01.31</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/16">나의 macOS를 GitHub Actions Runner로 만들기</a></td>
       <td align="center"><code>2026.01.17</code></td>
@@ -41,10 +45,6 @@ Today: 5 | Yesterday: 10 | Total: 2,115
     <tr>
       <td><a href="https://woojjam.tistory.com/13">자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃</a></td>
       <td align="center"><code>2025.08.01</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/12">자바와 스프링의 비동기 처리 - 1편: CompletableFuture 톺아보기</a></td>
-      <td align="center"><code>2025.07.11</code></td>
     </tr>
   </tbody>
 </table>
