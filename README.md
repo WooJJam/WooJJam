@@ -2,7 +2,6 @@
 ![Badge](https://hitscounter.dev/api/hit?url=https%3A%2F%2Fgithub.com%2FWooJJam&label=Visitors&icon=github&color=%23cfe2ff&message=&style=flat&tz=Asia%2FSeoul) <a href="https://solved.ac/WooJJam"> <img src="https://mazassumnida.wtf/api/mini/generate_badge?boj=WooJJam"> </a>
 ![Java](https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white) ![SpringBoot](https://img.shields.io/badge/SpringBoot-6DB33F?style=flat&logo=SpringBoot&logoColor=white) ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white)
 ![Amazon AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=AWS&logoColor=white) 
-<!-- ![Github Action](https://img.shields.io/badge/GitHubActions-2088FF?style=flat&logo=Actions&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=Docker&logoColor=white) <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-social&logo=NGINX&logoColor=white"> -->
 
 ### Activity
 - YAPP 27기 Server (2025.11 - 진행중)
