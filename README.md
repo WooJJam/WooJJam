@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 1 | Yesterday: 19 | Total: 2,199
+Today: 11 | Yesterday: 19 | Total: 2,209
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 1 | Yesterday: 19 | Total: 2,199
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/18">Swagger MCP Server 만들기 1편 - LLM 기반 API 탐색 자동화 설계</a></td>
+      <td align="center"><code>2026.02.05</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/17">RestClient는 어떻게 생성이 될까?</a></td>
       <td align="center"><code>2026.01.31</code></td>
@@ -40,10 +44,6 @@ Today: 1 | Yesterday: 19 | Total: 2,199
     <tr>
       <td><a href="https://woojjam.tistory.com/14">Java의 final은 불변성을 보장하지 않는다.</a></td>
       <td align="center"><code>2025.11.06</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/13">자바와 스프링의 비동기 처리 - 2편: CompletableFuture의 예외 처리와 타임 아웃</a></td>
-      <td align="center"><code>2025.08.01</code></td>
     </tr>
   </tbody>
 </table>
