@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 42 | Yesterday: 20 | Total: 2,364
+Today: 6 | Yesterday: 43 | Total: 2,371
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 42 | Yesterday: 20 | Total: 2,364
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/19">Swagger MCP Server 만들기 2편 - Swagger API 파싱</a></td>
+      <td align="center"><code>2026.02.13</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/18">Swagger MCP Server 만들기 1편 - LLM 기반 API 탐색 자동화 설계</a></td>
       <td align="center"><code>2026.02.05</code></td>
@@ -40,10 +44,6 @@ Today: 42 | Yesterday: 20 | Total: 2,364
     <tr>
       <td><a href="https://woojjam.tistory.com/15">PR 본문 자동화를 위한 AI 워크플로우 설계</a></td>
       <td align="center"><code>2026.01.15</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/14">Java의 final은 불변성을 보장하지 않는다.</a></td>
-      <td align="center"><code>2025.11.06</code></td>
     </tr>
   </tbody>
 </table>
