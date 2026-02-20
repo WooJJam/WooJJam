@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 1 | Yesterday: 38 | Total: 2,478
+Today: 9 | Yesterday: 38 | Total: 2,486
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 1 | Yesterday: 38 | Total: 2,478
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/20">Swagger MCP Server 만들기 3편 - DB 저장 설계와 트러블 슈팅</a></td>
+      <td align="center"><code>2026.02.17</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/19">Swagger MCP Server 만들기 2편 - Swagger API 파싱</a></td>
       <td align="center"><code>2026.02.13</code></td>
@@ -40,10 +44,6 @@ Today: 1 | Yesterday: 38 | Total: 2,478
     <tr>
       <td><a href="https://woojjam.tistory.com/16">나의 macOS를 GitHub Actions Runner로 만들기</a></td>
       <td align="center"><code>2026.01.17</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/15">PR 본문 자동화를 위한 AI 워크플로우 설계</a></td>
-      <td align="center"><code>2026.01.15</code></td>
     </tr>
   </tbody>
 </table>
