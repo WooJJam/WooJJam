@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 28 | Yesterday: 20 | Total: 2,670
+Today: 0 | Yesterday: 28 | Total: 2,670
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 28 | Yesterday: 20 | Total: 2,670
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/21">Swagger MCP Server 만들기 4편 - Spring AI로 MCP 서버를 구축하고, Claude Code에 연동하기</a></td>
+      <td align="center"><code>2026.02.27</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/20">Swagger MCP Server 만들기 3편 - DB 저장 설계와 트러블 슈팅</a></td>
       <td align="center"><code>2026.02.17</code></td>
@@ -40,10 +44,6 @@ Today: 28 | Yesterday: 20 | Total: 2,670
     <tr>
       <td><a href="https://woojjam.tistory.com/17">RestClient는 어떻게 생성이 될까?</a></td>
       <td align="center"><code>2026.01.31</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/16">나의 macOS를 GitHub Actions Runner로 만들기</a></td>
-      <td align="center"><code>2026.01.17</code></td>
     </tr>
   </tbody>
 </table>
