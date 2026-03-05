@@ -2,8 +2,8 @@ name: Update Tistory Blog Posts
 
 on:
   schedule:
-    # - cron: '0 0-14 * * *' # KST 09:00~23:00
-    - cron: '0 14 * * *'
+    - cron: '0 0-14 * * *' # KST 09:00~23:00
+    # - cron: '0 14 * * *'
   workflow_dispatch:
   push:
     branches:
