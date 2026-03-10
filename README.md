@@ -9,7 +9,7 @@
 - 코드잇 Sprint Team Lead <sub>2024.05 ~ 2024.08</sub>
 - 영남권 대학 연합 AI해커톤 DreamLandThon 우수상 <sub>2025.07</sub>
 
-### Latest Posts
+### Blog Posts
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
