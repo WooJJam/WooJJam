@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 53 | Yesterday: 27 | Total: 3,109
+Today: 9 | Yesterday: 55 | Total: 3,120
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 53 | Yesterday: 27 | Total: 3,109
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 Thread Pool 고갈 없이 외부 API 병렬 처리하기</a></td>
+      <td align="center"><code>2026.03.13</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/21">Swagger MCP Server 만들기 4편 - Spring AI로 MCP 서버를 구축하고, Claude Code에 연동하기</a></td>
       <td align="center"><code>2026.02.27</code></td>
@@ -40,10 +44,6 @@ Today: 53 | Yesterday: 27 | Total: 3,109
     <tr>
       <td><a href="https://woojjam.tistory.com/18">Swagger MCP Server 만들기 1편 - LLM 기반 API 탐색 자동화 설계</a></td>
       <td align="center"><code>2026.02.05</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/17">RestClient는 어떻게 생성이 될까?</a></td>
-      <td align="center"><code>2026.01.31</code></td>
     </tr>
   </tbody>
 </table>
