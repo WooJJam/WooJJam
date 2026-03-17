@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 35 | Yesterday: 28 | Total: 3,215
+Today: 38 | Yesterday: 28 | Total: 3,218
 
 </div>
 
@@ -26,7 +26,7 @@ Today: 35 | Yesterday: 28 | Total: 3,215
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 Thread Pool 고갈 없이 외부 API 병렬 처리하기</a></td>
+      <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 병렬 호출하여 Thread Pool 고갈 문제 해결하기</a></td>
       <td align="center"><code>2026.03.13</code></td>
     </tr>
     <tr>
