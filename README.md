@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 31 | Yesterday: 32 | Total: 3,430
+Today: 13 | Yesterday: 31 | Total: 3,443
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 31 | Yesterday: 32 | Total: 3,430
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/23">분산 환경에서 MySQL Named Lock으로 분산 락을 구축하고, 동시성 제어하기</a></td>
+      <td align="center"><code>2026.03.24</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 병렬 호출하여 Thread Pool 고갈 문제 해결하기</a></td>
       <td align="center"><code>2026.03.13</code></td>
@@ -40,10 +44,6 @@ Today: 31 | Yesterday: 32 | Total: 3,430
     <tr>
       <td><a href="https://woojjam.tistory.com/19">Swagger MCP Server 만들기 2편 - Swagger API 파싱</a></td>
       <td align="center"><code>2026.02.13</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/18">Swagger MCP Server 만들기 1편 - LLM 기반 API 탐색 자동화 설계</a></td>
-      <td align="center"><code>2026.02.05</code></td>
     </tr>
   </tbody>
 </table>
