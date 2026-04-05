@@ -5,7 +5,7 @@
 
 ### Activity
 - YAPP 27기 Server Developer <sub>2025.11 ~ 2026.03</sub>
-- 풋살장 예약 플랫폼 [SPONJY](https://www.sponjy.com/) 개발 및 운영 <sub>2024.09 ~ 2025.08</sub>
+- 풋살장 예약 O2O 플랫폼 [SPONJY](https://www.sponjy.com/) 개발 및 운영 <sub>2024.09 ~ 2025.08</sub>
 - 코드잇 Sprint Team Lead <sub>2024.05 ~ 2024.08</sub>
 - 영남권 대학 연합 AI해커톤 DreamLandThon 우수상 <sub>2025.07</sub>
 
