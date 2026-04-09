@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 46 | Yesterday: 59 | Total: 3,930
+Today: 48 | Yesterday: 59 | Total: 3,932
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 46 | Yesterday: 59 | Total: 3,930
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/24">카카오톡 Bizmessage로 알림톡 전송하기</a></td>
+      <td align="center"><code>2026.04.09</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/23">분산 환경에서 MySQL Named Lock으로 분산 락을 구축하고, 동시성 제어하기</a></td>
       <td align="center"><code>2026.03.24</code></td>
@@ -40,10 +44,6 @@ Today: 46 | Yesterday: 59 | Total: 3,930
     <tr>
       <td><a href="https://woojjam.tistory.com/20">Swagger MCP Server 만들기 3편 - DB 저장 설계와 트러블 슈팅</a></td>
       <td align="center"><code>2026.02.17</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/19">Swagger MCP Server 만들기 2편 - Swagger API 파싱</a></td>
-      <td align="center"><code>2026.02.13</code></td>
     </tr>
   </tbody>
 </table>
