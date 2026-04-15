@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 0 | Yesterday: 28 | Total: 4,041
+Today: 6 | Yesterday: 28 | Total: 4,047
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 0 | Yesterday: 28 | Total: 4,041
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/25">이벤트 유실을 방지하기 위한 Outbox Pattern 도입기</a></td>
+      <td align="center"><code>2026.04.14</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/24">카카오톡 Bizmessage로 알림톡 전송하기</a></td>
       <td align="center"><code>2026.04.09</code></td>
@@ -40,10 +44,6 @@ Today: 0 | Yesterday: 28 | Total: 4,041
     <tr>
       <td><a href="https://woojjam.tistory.com/21">Swagger MCP Server 만들기 4편 - Spring AI로 MCP 서버를 구축하고, Claude Code에 연동하기</a></td>
       <td align="center"><code>2026.02.27</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/20">Swagger MCP Server 만들기 3편 - DB 저장 설계와 트러블 슈팅</a></td>
-      <td align="center"><code>2026.02.17</code></td>
     </tr>
   </tbody>
 </table>
