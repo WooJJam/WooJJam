@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 22 | Yesterday: 1 | Total: 4,170
+Today: 10 | Yesterday: 26 | Total: 4,184
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 22 | Yesterday: 1 | Total: 4,170
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/26">ShedLock으로 분산 환경에서 스케줄러 중복 실행을 방지하자</a></td>
+      <td align="center"><code>2026.04.21</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/25">이벤트 유실을 방지하기 위한 Outbox Pattern 도입기</a></td>
       <td align="center"><code>2026.04.14</code></td>
@@ -40,10 +44,6 @@ Today: 22 | Yesterday: 1 | Total: 4,170
     <tr>
       <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 병렬 호출하여 Thread Pool 고갈 문제 해결하기</a></td>
       <td align="center"><code>2026.03.13</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/21">Swagger MCP Server 만들기 4편 - Spring AI로 MCP 서버를 구축하고, Claude Code에 연동하기</a></td>
-      <td align="center"><code>2026.02.27</code></td>
     </tr>
   </tbody>
 </table>
