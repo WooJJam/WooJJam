@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 0 | Yesterday: 40 | Total: 4,214
+Today: 6 | Yesterday: 40 | Total: 4,220
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 0 | Yesterday: 40 | Total: 4,214
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/27">분산 환경에서 결제 이벤트 유실 방지하기 (Outbox, Failover Scheduler, ShedLock)</a></td>
+      <td align="center"><code>2026.04.22</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/26">ShedLock으로 분산 환경에서 스케줄러 중복 실행을 방지하자</a></td>
       <td align="center"><code>2026.04.21</code></td>
@@ -40,10 +44,6 @@ Today: 0 | Yesterday: 40 | Total: 4,214
     <tr>
       <td><a href="https://woojjam.tistory.com/23">분산 환경에서 MySQL Named Lock으로 분산 락을 구축하고, 동시성 제어하기</a></td>
       <td align="center"><code>2026.03.24</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/22">Virtual Thread로 병렬 호출하여 Thread Pool 고갈 문제 해결하기</a></td>
-      <td align="center"><code>2026.03.13</code></td>
     </tr>
   </tbody>
 </table>
