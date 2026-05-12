@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 31 | Yesterday: 2 | Total: 4,559
+Today: 5 | Yesterday: 32 | Total: 4,565
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 31 | Yesterday: 2 | Total: 4,559
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/28">AOP에서 함수형 인터페이스를 직접 만든 이유</a></td>
+      <td align="center"><code>2026.05.12</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/27">분산 환경에서 결제 이벤트 유실 방지하기 (Outbox, Failover Scheduler, ShedLock)</a></td>
       <td align="center"><code>2026.04.22</code></td>
@@ -40,10 +44,6 @@ Today: 31 | Yesterday: 2 | Total: 4,559
     <tr>
       <td><a href="https://woojjam.tistory.com/24">카카오톡 Bizmessage로 알림톡 전송하기</a></td>
       <td align="center"><code>2026.04.09</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/23">분산 환경에서 MySQL Named Lock으로 분산 락을 구축하고, 동시성 제어하기</a></td>
-      <td align="center"><code>2026.03.24</code></td>
     </tr>
   </tbody>
 </table>
