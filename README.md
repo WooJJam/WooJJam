@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 5 | Yesterday: 32 | Total: 4,565
+Today: 9 | Yesterday: 32 | Total: 4,569
 
 </div>
 
@@ -26,7 +26,7 @@ Today: 5 | Yesterday: 32 | Total: 4,565
   </thead>
   <tbody>
     <tr>
-      <td><a href="https://woojjam.tistory.com/28">AOP에서 함수형 인터페이스를 직접 만든 이유</a></td>
+      <td><a href="https://woojjam.tistory.com/28">AOP를 적용하며 함수형 인터페이스를 직접 만든 이유</a></td>
       <td align="center"><code>2026.05.12</code></td>
     </tr>
     <tr>
