@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 3 | Yesterday: 16 | Total: 5,066
+Today: 6 | Yesterday: 16 | Total: 5,069
 
 </div>
 
@@ -25,6 +25,10 @@ Today: 3 | Yesterday: 16 | Total: 5,066
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td><a href="https://woojjam.tistory.com/29">AI 에이전트로 나만의 전문 개발팀 만들기</a></td>
+      <td align="center"><code>2026.06.06</code></td>
+    </tr>
     <tr>
       <td><a href="https://woojjam.tistory.com/28">AOP를 적용하며 함수형 인터페이스를 직접 만든 이유</a></td>
       <td align="center"><code>2026.05.12</code></td>
@@ -40,10 +44,6 @@ Today: 3 | Yesterday: 16 | Total: 5,066
     <tr>
       <td><a href="https://woojjam.tistory.com/25">이벤트 유실을 방지하기 위한 Outbox Pattern 도입기</a></td>
       <td align="center"><code>2026.04.14</code></td>
-    </tr>
-    <tr>
-      <td><a href="https://woojjam.tistory.com/24">카카오톡 Bizmessage로 알림톡 전송하기</a></td>
-      <td align="center"><code>2026.04.09</code></td>
     </tr>
   </tbody>
 </table>
