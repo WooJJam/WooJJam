@@ -13,7 +13,7 @@
 <!-- BLOG-POST-LIST:START -->
 <div align='left'>
 
-Today: 2 | Yesterday: 16 | Total: 5,477
+Today: 0 | Yesterday: 3 | Total: 5,478
 
 </div>
 
